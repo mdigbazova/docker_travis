@@ -3,7 +3,7 @@ services:
   - docker
 
 script:
-  - docker build -t C:\Learning\Docker\LinkedInCourseDocker\node .
-  - docker images C:\Learning\Docker\LinkedInCourseDocker\node 
+  - docker build -t mdigbazova/docker_travis .
+  - docker images mdigbazova/docker_travis 
 
 
