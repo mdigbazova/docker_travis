@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+scrit:
+  - docker build -t C:\Learning\Docker\LinkedInCourseDocker\node .
+  - docker images C:\Learning\Docker\LinkedInCourseDocker\node 
+
+
