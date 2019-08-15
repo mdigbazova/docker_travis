@@ -11,7 +11,8 @@ before_deploy:
 
 deploy:
  provider: script
- script: docker push foretell/tests
+ #foretell/tests
+ script: docker push mdigbazova/docker_travis 
  on:
     branch: master
 
