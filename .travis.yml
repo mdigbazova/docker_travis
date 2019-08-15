@@ -6,4 +6,13 @@ script:
   - docker build -t mdigbazova/docker_travis .
   - docker images mdigbazova/docker_travis 
 
+before_deploy:
+  - docker login -u foretell -p 1Q!KraliMarko 
+
+deploy:
+ - privider: script
+ - script: docker push mdigbazova/travis_docker
+  on:
+ - branch: master
+
 
