@@ -4,7 +4,7 @@ services:
 
 script:
   - docker build -t mdigbazova/docker_travis .
-  - docker images foretell/tests # mdigbazova/docker_travis 
+  - docker images mdigbazova/docker_travis # mdigbazova/docker_travis 
 
 before_deploy:
   - docker login -u foretell -p 1Q!KraliMarko 
@@ -12,7 +12,7 @@ before_deploy:
 deploy:
  provider: script
  #foretell/tests mdigbazova/docker_travis
- script: docker push foretell/tests
+ script: docker push foretell/tests:mdigbazova/docker_travis
  on:
     branch: master
 
